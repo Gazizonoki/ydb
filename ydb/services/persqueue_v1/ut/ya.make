@@ -45,11 +45,11 @@ PEERDIR(
     ydb/library/persqueue/tests
     ydb/library/persqueue/topic_parser
     ydb/public/api/grpc
-    ydb/public/sdk/cpp/client/ydb_persqueue_core/ut/ut_utils
-    ydb/public/sdk/cpp/client/ydb_persqueue_public
-    ydb/public/sdk/cpp/client/ydb_table
-    ydb/public/sdk/cpp/client/ydb_topic
-    ydb/public/sdk/cpp/client/ydb_proto
+    client/ydb_persqueue_core/ut/ut_utils
+    client/ydb_persqueue_public
+    client/ydb_table
+    client/ydb_topic
+    client/ydb_proto
     ydb/services/persqueue_v1
 )
 

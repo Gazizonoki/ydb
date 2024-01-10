@@ -1,11 +1,11 @@
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_proto/accessor.h>
 
 #include <ydb/core/kqp/counters/kqp_counters.h>
 
 #include <ydb/core/tx/datashard/datashard_failpoints.h>
 
-#include <ydb/public/sdk/cpp/client/draft/ydb_scripting.h>
+#include <client/draft/ydb_scripting.h>
 
 #include <library/cpp/json/json_prettifier.h>
 

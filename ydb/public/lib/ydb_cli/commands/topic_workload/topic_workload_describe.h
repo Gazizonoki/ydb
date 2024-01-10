@@ -3,7 +3,7 @@
 #include <util/system/types.h>
 #include <util/string/type.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_topic/topic.h>
+#include <client/ydb_topic/topic.h>
 
 namespace NYdb {
     namespace NConsoleClient {

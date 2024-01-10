@@ -6,7 +6,7 @@
 #include <ydb/library/services/services.pb.h>
 
 #include <ydb/public/api/protos/ydb_discovery.pb.h>
-#include <ydb/public/sdk/cpp/client/extensions/discovery_mutator/discovery_mutator.h>
+#include <client/extensions/discovery_mutator/discovery_mutator.h>
 
 #include <util/generic/cast.h>
 #include <util/generic/strbuf.h>

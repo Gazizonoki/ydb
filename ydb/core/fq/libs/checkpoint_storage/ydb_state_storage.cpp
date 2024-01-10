@@ -4,7 +4,7 @@
 #include <ydb/core/fq/libs/ydb/util.h>
 #include <ydb/core/fq/libs/ydb/ydb.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_scheme/scheme.h>
+#include <client/ydb_scheme/scheme.h>
 
 #include <util/stream/str.h>
 #include <util/string/join.h>

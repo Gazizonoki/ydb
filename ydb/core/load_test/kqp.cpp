@@ -8,7 +8,7 @@
 #include <ydb/library/workload/stock_workload.h>
 #include <ydb/library/workload/kv_workload.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_proto/accessor.h>
 
 #include <library/cpp/monlib/service/pages/templates.h>
 #include <library/cpp/histogram/hdr/histogram.h>

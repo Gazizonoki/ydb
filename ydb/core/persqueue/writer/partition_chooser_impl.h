@@ -11,7 +11,7 @@
 #include <ydb/core/persqueue/utils.h>
 #include <ydb/core/persqueue/writer/metadata_initializers.h>
 #include <ydb/library/yql/public/decimal/yql_decimal.h>
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_proto/accessor.h>
 
 #include "partition_chooser.h"
 

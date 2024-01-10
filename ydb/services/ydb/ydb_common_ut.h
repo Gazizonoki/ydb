@@ -5,7 +5,7 @@
 #include <ydb/core/testlib/test_client.h>
 #include <ydb/core/formats/arrow/arrow_helpers.h>
 #include <ydb/services/ydb/ydb_dummy.h>
-#include <ydb/public/sdk/cpp/client/ydb_value/value.h>
+#include <client/ydb_value/value.h>
 
 #include "ydb_keys_ut.h"
 

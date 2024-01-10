@@ -1,6 +1,6 @@
-#include <ydb/public/sdk/cpp/client/ydb_persqueue_core/ut/ut_utils/test_server.h>
-#include <ydb/public/sdk/cpp/client/ydb_persqueue_public/persqueue.h>
-#include <ydb/public/sdk/cpp/client/ydb_driver/driver.h>
+#include <client/ydb_persqueue_core/ut/ut_utils/test_server.h>
+#include <client/ydb_persqueue_public/persqueue.h>
+#include <client/ydb_driver/driver.h>
 #include <ydb/public/api/grpc/ydb_topic_v1.grpc.pb.h>
 
 using namespace NYdb;

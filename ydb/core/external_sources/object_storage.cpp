@@ -7,7 +7,7 @@
 #include <ydb/library/yql/providers/common/provider/yql_provider_names.h>
 #include <ydb/library/yql/providers/s3/path_generator/yql_s3_path_generator.h>
 #include <ydb/public/api/protos/ydb_status_codes.pb.h>
-#include <ydb/public/sdk/cpp/client/ydb_value/value.h>
+#include <client/ydb_value/value.h>
 
 #include <library/cpp/scheme/scheme.h>
 

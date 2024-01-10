@@ -31,13 +31,13 @@ PEERDIR(
     ydb/public/lib/experimental
     ydb/public/lib/json_value
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/draft
-    ydb/public/sdk/cpp/client/ydb_coordination
-    ydb/public/sdk/cpp/client/ydb_export
-    ydb/public/sdk/cpp/client/ydb_extension
-    ydb/public/sdk/cpp/client/ydb_operation
-    ydb/public/sdk/cpp/client/ydb_scheme
-    ydb/public/sdk/cpp/client/ydb_monitoring
+    client/draft
+    client/ydb_coordination
+    client/ydb_export
+    client/ydb_extension
+    client/ydb_operation
+    client/ydb_scheme
+    client/ydb_monitoring
     ydb/services/ydb
 )
 

@@ -3,7 +3,7 @@
 #include <ydb/core/fq/libs/compute/common/config.h>
 #include <ydb/core/fq/libs/shared_resources/shared_resources.h>
 #include <ydb/core/fq/libs/ydb/ydb.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_table/table.h>
 
 namespace NFq {
 

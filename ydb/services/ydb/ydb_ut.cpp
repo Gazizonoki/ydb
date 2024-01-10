@@ -23,11 +23,11 @@
 #include <ydb/library/yql/public/issue/yql_issue.h>
 #include <ydb/library/yql/public/issue/yql_issue_message.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
-#include <ydb/public/sdk/cpp/client/ydb_result/result.h>
-#include <ydb/public/sdk/cpp/client/ydb_scheme/scheme.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
-#include <ydb/public/sdk/cpp/client/resources/ydb_resources.h>
+#include <client/ydb_params/params.h>
+#include <client/ydb_result/result.h>
+#include <client/ydb_scheme/scheme.h>
+#include <client/ydb_table/table.h>
+#include <client/resources/ydb_resources.h>
 
 #include <ydb/public/lib/yson_value/ydb_yson_value.h>
 #include <ydb/public/lib/json_value/ydb_json_value.h>

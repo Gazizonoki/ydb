@@ -6,9 +6,9 @@
 #include <ydb/core/statistics/events.h>
 #include <ydb/core/statistics/stat_service.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_result/result.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
-#include <ydb/public/sdk/cpp/client/ydb_scheme/scheme.h>
+#include <client/ydb_result/result.h>
+#include <client/ydb_table/table.h>
+#include <client/ydb_scheme/scheme.h>
 
 namespace NKikimr {
 namespace NStat {

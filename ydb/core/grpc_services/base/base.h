@@ -13,7 +13,7 @@
 #include <ydb/public/api/protos/ydb_operation.pb.h>
 #include <ydb/public/api/protos/ydb_common.pb.h>
 
-#include <ydb/public/sdk/cpp/client/resources/ydb_resources.h>
+#include <client/resources/ydb_resources.h>
 
 #include <ydb/library/yql/public/issue/yql_issue.h>
 #include <ydb/library/yql/public/issue/yql_issue_message.h>

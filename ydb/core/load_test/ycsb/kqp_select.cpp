@@ -9,9 +9,9 @@
 #include <ydb/core/ydb_convert/ydb_convert.h>
 
 #include <ydb/public/lib/operation_id/operation_id.h>
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_params/params.h>
+#include <client/ydb_params/params.h>
+#include <client/ydb_proto/accessor.h>
 
 #include <library/cpp/monlib/service/pages/templates.h>
 

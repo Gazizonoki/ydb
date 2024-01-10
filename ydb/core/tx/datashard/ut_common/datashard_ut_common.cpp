@@ -14,7 +14,7 @@
 #include <ydb/core/tx/tx_proxy/proxy.h>
 #include <ydb/core/tx/tx_proxy/upload_rows.h>
 #include <ydb/core/tx/schemeshard/schemeshard_build_index.h>
-#include <ydb/public/sdk/cpp/client/ydb_result/result.h>
+#include <client/ydb_result/result.h>
 
 #include <ydb/library/yql/minikql/mkql_node_serialization.h>
 

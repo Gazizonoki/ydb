@@ -1,7 +1,7 @@
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_proto/accessor.h>
+#include <client/ydb_table/table.h>
 #include <ydb/core/protos/flat_scheme_op.pb.h>
 
 #include <library/cpp/json/json_reader.h>

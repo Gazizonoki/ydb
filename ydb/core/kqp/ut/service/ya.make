@@ -27,8 +27,8 @@ PEERDIR(
     ydb/library/yql/sql/pg
     ydb/library/yql/parser/pg_wrapper
     ydb/public/lib/ut_helpers
-    ydb/public/sdk/cpp/client/ydb_operation
-    ydb/public/sdk/cpp/client/ydb_types/operation
+    client/ydb_operation
+    client/ydb_types/operation
 )
 
 YQL_LAST_ABI_VERSION()

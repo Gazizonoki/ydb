@@ -13,8 +13,8 @@ PEERDIR(
     ydb/library/aclib
     ydb/public/lib/deprecated/kicli
     ydb/public/lib/ydb_cli/common
-    ydb/public/sdk/cpp/client/resources
-    ydb/public/sdk/cpp/client/ydb_table
+    client/resources
+    client/ydb_table
 )
 
 YQL_LAST_ABI_VERSION()

@@ -4,7 +4,7 @@
 #include <ydb/core/scheme/scheme_tabledefs.h>
 #include <ydb/library/ydb_issue/issue_helpers.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_value/value.h>
+#include <client/ydb_value/value.h>
 
 #include <ydb/library/binary_json/read.h>
 #include <ydb/library/binary_json/write.h>

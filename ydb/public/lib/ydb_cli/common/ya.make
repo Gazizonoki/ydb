@@ -40,13 +40,13 @@ PEERDIR(
     ydb/public/lib/json_value
     ydb/public/lib/operation_id
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/draft
-    ydb/public/sdk/cpp/client/ydb_result
-    ydb/public/sdk/cpp/client/ydb_scheme
-    ydb/public/sdk/cpp/client/ydb_table
-    ydb/public/sdk/cpp/client/ydb_topic
-    ydb/public/sdk/cpp/client/ydb_types
-    ydb/public/sdk/cpp/client/ydb_types/credentials
+    client/draft
+    client/ydb_result
+    client/ydb_scheme
+    client/ydb_table
+    client/ydb_topic
+    client/ydb_types
+    client/ydb_types/credentials
     ydb/library/arrow_parquet
 )
 

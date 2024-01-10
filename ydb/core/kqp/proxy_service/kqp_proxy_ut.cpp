@@ -8,10 +8,10 @@
 #include <ydb/core/testlib/test_client.h>
 #include <ydb/core/testlib/basics/appdata.h>
 #include <ydb/core/tx/schemeshard/schemeshard.h>
-#include <ydb/public/sdk/cpp/client/ydb_query/client.h>
-#include <ydb/public/sdk/cpp/client/ydb_driver/driver.h>
-#include <ydb/public/sdk/cpp/client/ydb_scheme/scheme.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_query/client.h>
+#include <client/ydb_driver/driver.h>
+#include <client/ydb_scheme/scheme.h>
+#include <client/ydb_table/table.h>
 #include <ydb/services/ydb/ydb_common_ut.h>
 
 #include <ydb/library/actors/interconnect/interconnect_impl.h>

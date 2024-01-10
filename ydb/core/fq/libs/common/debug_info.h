@@ -2,7 +2,7 @@
 
 #include <util/generic/string.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
+#include <client/ydb_params/params.h>
 
 namespace NFq {
 

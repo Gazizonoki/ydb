@@ -1,5 +1,5 @@
 #include "partition_chooser_impl.h"
-#include "ydb/public/sdk/cpp/client/ydb_proto/accessor.h"
+#include "client/ydb_proto/accessor.h"
 
 #include <library/cpp/digest/md5/md5.h>
 #include <ydb/core/persqueue/partition_key_range/partition_key_range.h>

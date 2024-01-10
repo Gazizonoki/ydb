@@ -21,8 +21,8 @@ PEERDIR(
     ydb/library/security
     ydb/library/yql/dq/actors/compute
     ydb/library/yql/dq/proto
-    ydb/public/sdk/cpp/client/ydb_scheme
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_scheme
+    client/ydb_table
 )
 
 YQL_LAST_ABI_VERSION()

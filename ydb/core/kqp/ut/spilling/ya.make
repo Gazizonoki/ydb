@@ -10,7 +10,7 @@ SRCS(
 )
 
 PEERDIR(
-    ydb/public/sdk/cpp/client/ydb_proto
+    client/ydb_proto
     ydb/core/kqp
     ydb/core/kqp/counters
     ydb/core/kqp/host

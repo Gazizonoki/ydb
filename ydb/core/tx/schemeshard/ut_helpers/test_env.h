@@ -10,7 +10,7 @@
 #include <ydb/core/tx/schemeshard/schemeshard_identificators.h>
 #include <ydb/core/tx/schemeshard/schemeshard_import.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_driver/driver.h>
+#include <client/ydb_driver/driver.h>
 
 #include <functional>
 

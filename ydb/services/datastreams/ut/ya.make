@@ -16,7 +16,7 @@ PEERDIR(
     library/cpp/svnversion
     ydb/core/testlib/default
     ydb/services/datastreams
-    ydb/public/sdk/cpp/client/ydb_topic
+    client/ydb_topic
 )
 
 YQL_LAST_ABI_VERSION()

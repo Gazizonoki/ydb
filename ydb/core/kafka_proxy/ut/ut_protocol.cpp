@@ -8,12 +8,12 @@
 
 #include <ydb/library/testlib/service_mocks/access_service_mock.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_datastreams/datastreams.h>
-#include <ydb/public/sdk/cpp/client/ydb_topic/topic.h>
-#include <ydb/public/sdk/cpp/client/ydb_persqueue_public/persqueue.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/status_codes.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
-#include <ydb/public/sdk/cpp/client/ydb_scheme/scheme.h>
+#include <client/ydb_datastreams/datastreams.h>
+#include <client/ydb_topic/topic.h>
+#include <client/ydb_persqueue_public/persqueue.h>
+#include <client/ydb_types/status_codes.h>
+#include <client/ydb_table/table.h>
+#include <client/ydb_scheme/scheme.h>
 #include <ydb/public/api/grpc/draft/ydb_datastreams_v1.grpc.pb.h>
 
 #include <library/cpp/json/json_reader.h>

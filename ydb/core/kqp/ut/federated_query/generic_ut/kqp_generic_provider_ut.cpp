@@ -4,9 +4,9 @@
 #include <ydb/library/yql/providers/generic/connector/libcpp/client.h>
 #include <ydb/library/yql/providers/generic/connector/libcpp/ut_helpers/connector_client_mock.h>
 #include <ydb/library/yql/providers/generic/connector/libcpp/ut_helpers/database_resolver_mock.h>
-#include <ydb/public/sdk/cpp/client/ydb_operation/operation.h>
-#include <ydb/public/sdk/cpp/client/ydb_query/query.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/status_codes.h>
+#include <client/ydb_operation/operation.h>
+#include <client/ydb_query/query.h>
+#include <client/ydb_types/status_codes.h>
 
 #include <library/cpp/testing/unittest/registar.h>
 

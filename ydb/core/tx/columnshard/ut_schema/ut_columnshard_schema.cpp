@@ -9,7 +9,7 @@
 #include <ydb/core/tx/columnshard/hooks/abstract/abstract.h>
 #include <ydb/core/tx/columnshard/hooks/testing/controller.h>
 #include <ydb/core/tx/columnshard/blobs_reader/actor.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_table/table.h>
 
 #include <ydb/library/actors/core/av_bootstrapped.h>
 

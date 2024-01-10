@@ -26,7 +26,7 @@
 #include <ydb/public/api/grpc/draft/ydb_long_tx_v1.pb.h>
 
 #define INCLUDE_YDB_INTERNAL_H
-#include <ydb/public/sdk/cpp/client/impl/ydb_internal/make_request/make.h>
+#include <client/impl/ydb_internal/make_request/make.h>
 #undef INCLUDE_YDB_INTERNAL_H
 
 #include <ydb/library/actors/core/actor_bootstrapped.h>

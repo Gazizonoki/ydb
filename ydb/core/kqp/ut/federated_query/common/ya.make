@@ -6,8 +6,8 @@ SRCS(
 
 PEERDIR(
     ydb/core/kqp/ut/common
-    ydb/public/sdk/cpp/client/ydb_operation
-    ydb/public/sdk/cpp/client/ydb_query
+    client/ydb_operation
+    client/ydb_query
 )
 
 YQL_LAST_ABI_VERSION()

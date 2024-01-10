@@ -7,7 +7,7 @@
 
 #include <library/cpp/json/json_writer.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_table/table.h>
 #include <ydb/public/lib/yson_value/ydb_yson_value.h>
 
 #include <vector>

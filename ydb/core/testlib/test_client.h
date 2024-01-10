@@ -6,7 +6,7 @@
 #include <ydb/core/base/tablet_types.h>
 #include <ydb/core/base/domain.h>
 #include <ydb/core/driver_lib/run/config.h>
-#include <ydb/public/sdk/cpp/client/ydb_driver/driver.h>
+#include <client/ydb_driver/driver.h>
 #include <ydb/public/lib/deprecated/client/msgbus_client.h>
 #include <ydb/core/client/server/grpc_server.h>
 #include <ydb/core/scheme/scheme_types_defs.h>

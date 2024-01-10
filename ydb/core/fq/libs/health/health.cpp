@@ -7,7 +7,7 @@
 #include <ydb/core/mon/mon.h>
 #include <library/cpp/monlib/service/pages/templates.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_discovery/discovery.h>
+#include <client/ydb_discovery/discovery.h>
 
 namespace NFq {
 namespace {

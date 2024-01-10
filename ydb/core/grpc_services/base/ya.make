@@ -12,7 +12,7 @@ PEERDIR(
     ydb/core/grpc_services/counters
     ydb/core/grpc_streaming
     ydb/public/api/protos
-    ydb/public/sdk/cpp/client/resources
+    client/resources
     ydb/library/yql/public/issue
 )
 

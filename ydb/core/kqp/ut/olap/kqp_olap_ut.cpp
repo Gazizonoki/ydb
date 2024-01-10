@@ -1,6 +1,6 @@
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
 #include <ydb/core/kqp/ut/common/columnshard.h>
-#include <ydb/public/sdk/cpp/client/draft/ydb_long_tx.h>
+#include <client/draft/ydb_long_tx.h>
 
 #include <ydb/core/sys_view/service/query_history.h>
 #include <ydb/core/tx/columnshard/columnshard_ut_common.h>

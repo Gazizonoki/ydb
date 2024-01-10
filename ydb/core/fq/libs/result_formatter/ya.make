@@ -12,9 +12,9 @@ PEERDIR(
     ydb/library/yql/minikql/computation
     ydb/library/yql/public/udf
     ydb/public/api/protos
-    ydb/public/sdk/cpp/client/ydb_proto
-    ydb/public/sdk/cpp/client/ydb_result
-    ydb/public/sdk/cpp/client/ydb_value
+    client/ydb_proto
+    client/ydb_result
+    client/ydb_value
     ydb/library/yql/providers/common/codec
     ydb/library/yql/providers/common/schema/expr
     ydb/library/yql/providers/common/schema/mkql

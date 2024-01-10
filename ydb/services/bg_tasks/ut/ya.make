@@ -11,7 +11,7 @@ PEERDIR(
     ydb/core/testlib
     ydb/services/bg_tasks
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_table
     ydb/services/bg_tasks/abstract
     ydb/services/bg_tasks
     library/cpp/testing/unittest

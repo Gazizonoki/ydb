@@ -2,9 +2,9 @@
 
 #include <ydb/core/persqueue/user_info.h>
 #include <ydb/core/persqueue/write_meta.h>
-#include <ydb/public/sdk/cpp/client/ydb_datastreams/datastreams.h>
-#include <ydb/public/sdk/cpp/client/ydb_persqueue_public/persqueue.h>
-#include <ydb/public/sdk/cpp/client/ydb_topic/topic.h>
+#include <client/ydb_datastreams/datastreams.h>
+#include <client/ydb_persqueue_public/persqueue.h>
+#include <client/ydb_topic/topic.h>
 
 namespace NKikimr {
 

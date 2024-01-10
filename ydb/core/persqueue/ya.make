@@ -60,7 +60,7 @@ PEERDIR(
     ydb/library/persqueue/counter_time_keeper
     ydb/library/persqueue/topic_parser
     ydb/public/lib/base
-    ydb/public/sdk/cpp/client/ydb_persqueue_core
+    client/ydb_persqueue_core
 )
 
 END()

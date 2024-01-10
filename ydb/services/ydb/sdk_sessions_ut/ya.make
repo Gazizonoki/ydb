@@ -20,7 +20,7 @@ PEERDIR(
     ydb/library/grpc/client
     ydb/core/testlib/default
     ydb/core/testlib
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_table
 )
 
 YQL_LAST_ABI_VERSION()

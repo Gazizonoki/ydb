@@ -2,8 +2,8 @@
 
 #include "replication.h"
 
-#include <ydb/public/sdk/cpp/client/ydb_scheme/scheme.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/status/status.h>
+#include <client/ydb_scheme/scheme.h>
+#include <client/ydb_types/status/status.h>
 
 #include <ydb/library/yverify_stream/yverify_stream.h>
 

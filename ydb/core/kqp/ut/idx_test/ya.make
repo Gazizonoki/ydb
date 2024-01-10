@@ -25,8 +25,8 @@ PEERDIR(
     ydb/core/kqp/ut/common
     ydb/public/lib/idx_test
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/ydb_scheme
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_scheme
+    client/ydb_table
     ydb/library/yql/sql/pg_dummy
 )
 

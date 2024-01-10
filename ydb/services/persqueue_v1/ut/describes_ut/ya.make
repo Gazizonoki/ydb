@@ -21,7 +21,7 @@ PEERDIR(
     ydb/core/testlib/default
     ydb/core/client/server
     ydb/services/persqueue_v1
-    ydb/public/sdk/cpp/client/ydb_persqueue_core/ut/ut_utils
+    client/ydb_persqueue_core/ut/ut_utils
 )
 
 YQL_LAST_ABI_VERSION()

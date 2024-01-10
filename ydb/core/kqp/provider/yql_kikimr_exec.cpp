@@ -18,7 +18,7 @@
 
 #include <ydb/core/ydb_convert/ydb_convert.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_proto/accessor.h>
 #include <ydb/public/api/protos/ydb_topic.pb.h>
 
 #include <ydb/library/yql/dq/tasks/dq_task_program.h>

@@ -1,10 +1,10 @@
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
-#include <ydb/public/sdk/cpp/client/resources/ydb_resources.h>
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_table/table.h>
+#include <client/resources/ydb_resources.h>
+#include <client/ydb_proto/accessor.h>
 
 #include <ydb/library/yql/dq/actors/compute/dq_compute_actor.h>
-#include <ydb/public/sdk/cpp/client/draft/ydb_scripting.h>
+#include <client/draft/ydb_scripting.h>
 
 #include <cstdlib>
 

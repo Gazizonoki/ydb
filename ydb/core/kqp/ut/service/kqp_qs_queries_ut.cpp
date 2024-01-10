@@ -1,10 +1,10 @@
 #include <ydb/core/kqp/counters/kqp_counters.h>
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
 #include <ydb/public/lib/ut_helpers/ut_helpers_query.h>
-#include <ydb/public/sdk/cpp/client/ydb_operation/operation.h>
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/exceptions/exceptions.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/operation/operation.h>
+#include <client/ydb_operation/operation.h>
+#include <client/ydb_proto/accessor.h>
+#include <client/ydb_types/exceptions/exceptions.h>
+#include <client/ydb_types/operation/operation.h>
 
 #include <ydb/core/kqp/counters/kqp_counters.h>
 

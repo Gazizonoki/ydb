@@ -24,7 +24,7 @@ PEERDIR(
     ydb/core/tx
     ydb/library/yql/public/udf/service/exception_policy
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/ydb_result
+    client/ydb_result
     ydb/core/tx/schemeshard/ut_helpers
 )
 

@@ -14,7 +14,7 @@
 #include <ydb/core/viewer/json/json.h>
 //#include <ydb/public/lib/deprecated/kicli/kicli.h>
 #include <ydb/public/lib/json_value/ydb_json_value.h>
-#include <ydb/public/sdk/cpp/client/ydb_result/result.h>
+#include <client/ydb_result/result.h>
 #include "json_pipe_req.h"
 #include "viewer_request.h"
 

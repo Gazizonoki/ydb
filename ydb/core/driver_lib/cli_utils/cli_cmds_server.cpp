@@ -14,8 +14,8 @@
 #include <util/system/hostname.h>
 #include <google/protobuf/text_format.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_discovery/discovery.h>
-#include <ydb/public/sdk/cpp/client/ydb_driver/driver.h>
+#include <client/ydb_discovery/discovery.h>
+#include <client/ydb_driver/driver.h>
 
 extern TAutoPtr<NKikimrConfig::TActorSystemConfig> DummyActorSystemConfig();
 extern TAutoPtr<NKikimrConfig::TAllocatorConfig> DummyAllocatorConfig();

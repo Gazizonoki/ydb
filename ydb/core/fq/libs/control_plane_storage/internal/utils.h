@@ -2,7 +2,7 @@
 
 #include <tuple>
 
-#include <ydb/public/sdk/cpp/client/ydb_value/value.h>
+#include <client/ydb_value/value.h>
 
 #include <ydb/library/yql/public/issue/yql_issue_message.h>
 

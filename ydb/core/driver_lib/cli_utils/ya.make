@@ -56,8 +56,8 @@ PEERDIR(
     ydb/public/api/grpc/draft
     ydb/public/lib/deprecated/client
     ydb/public/lib/ydb_cli/common
-    ydb/public/sdk/cpp/client/ydb_discovery
-    ydb/public/sdk/cpp/client/ydb_driver
+    client/ydb_discovery
+    client/ydb_driver
 )
 
 YQL_LAST_ABI_VERSION()

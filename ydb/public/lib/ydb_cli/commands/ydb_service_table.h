@@ -5,9 +5,9 @@
 
 #include <ydb/public/lib/ydb_cli/common/format.h>
 #include <ydb/public/lib/ydb_cli/common/interruptible.h>
-#include <ydb/public/sdk/cpp/client/draft/ydb_scripting.h>
-#include <ydb/public/sdk/cpp/client/ydb_query/client.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/draft/ydb_scripting.h>
+#include <client/ydb_query/client.h>
+#include <client/ydb_table/table.h>
 #include <ydb/public/lib/ydb_cli/common/parameters.h>
 #include <ydb/public/lib/json_value/ydb_json_value.h>
 

@@ -1,6 +1,6 @@
 #include "debug_info.h"
 
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
+#include <client/ydb_proto/accessor.h>
 
 namespace NFq {
 

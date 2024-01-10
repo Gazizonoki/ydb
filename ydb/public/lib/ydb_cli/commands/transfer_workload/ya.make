@@ -17,13 +17,13 @@ PEERDIR(
     ydb/public/api/protos/annotations
     ydb/public/lib/operation_id
     ydb/public/lib/operation_id/protos
-    ydb/public/sdk/cpp/client/draft
-    ydb/public/sdk/cpp/client/ydb_driver
-    ydb/public/sdk/cpp/client/ydb_proto
-    ydb/public/sdk/cpp/client/ydb_table
-    ydb/public/sdk/cpp/client/ydb_topic
-    ydb/public/sdk/cpp/client/ydb_types/operation
-    ydb/public/sdk/cpp/client/ydb_types/status    
+    client/draft
+    client/ydb_driver
+    client/ydb_proto
+    client/ydb_table
+    client/ydb_topic
+    client/ydb_types/operation
+    client/ydb_types/status    
 )
 
 END()

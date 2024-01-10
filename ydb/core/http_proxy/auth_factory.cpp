@@ -6,7 +6,7 @@
 #include <ydb/core/http_proxy/metrics_actor.h>
 #include <ydb/core/http_proxy/discovery_actor.h>
 
-#include <ydb/public/sdk/cpp/client/iam_private/iam.h>
+#include <client/iam_private/iam.h>
 
 #include <ydb/library/actors/http/http_proxy.h>
 

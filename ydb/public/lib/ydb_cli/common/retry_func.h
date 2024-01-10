@@ -1,6 +1,6 @@
 #pragma once
 
-#include <ydb/public/sdk/cpp/client/ydb_types/status_codes.h>
+#include <client/ydb_types/status_codes.h>
 
 #include <util/datetime/base.h>
 

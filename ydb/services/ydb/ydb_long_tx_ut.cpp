@@ -1,6 +1,6 @@
 #include "ydb_common_ut.h"
 
-#include <ydb/public/sdk/cpp/client/draft/ydb_long_tx.h>
+#include <client/draft/ydb_long_tx.h>
 #include <ydb/core/tx/columnshard/columnshard.h>
 #include <ydb/core/tx/long_tx_service/public/types.h>
 #include <ydb/core/tx/sharding/sharding.h>

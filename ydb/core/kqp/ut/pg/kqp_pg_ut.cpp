@@ -1,4 +1,4 @@
-#include "ydb/public/sdk/cpp/client/ydb_proto/accessor.h"
+#include "client/ydb_proto/accessor.h"
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
 
 #include <ydb/library/yql/parser/pg_catalog/catalog.h>

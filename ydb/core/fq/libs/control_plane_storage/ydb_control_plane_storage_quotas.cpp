@@ -13,7 +13,7 @@
 #include <ydb/core/fq/libs/quota_manager/quota_manager.h>
 
 #include <ydb/public/api/protos/draft/fq.pb.h>
-#include <ydb/public/sdk/cpp/client/ydb_value/value.h>
+#include <client/ydb_value/value.h>
 
 #include <util/digest/multi.h>
 

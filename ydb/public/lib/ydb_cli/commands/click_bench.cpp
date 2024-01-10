@@ -10,7 +10,7 @@
 #include <library/cpp/http/simple/http_client.h>
 #include <library/cpp/string_utils/base64/base64.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_table/table.h>
 #include <ydb/public/lib/yson_value/ydb_yson_value.h>
 
 #include "click_bench.h"

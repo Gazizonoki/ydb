@@ -85,10 +85,10 @@ PEERDIR(
     ydb/library/yql/public/udf/service/exception_policy
     ydb/public/lib/base
     ydb/public/lib/deprecated/kicli
-    ydb/public/sdk/cpp/client/ydb_driver
-    ydb/public/sdk/cpp/client/ydb_persqueue_public/codecs
-    ydb/public/sdk/cpp/client/ydb_query
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_driver
+    client/ydb_persqueue_public/codecs
+    client/ydb_query
+    client/ydb_table
     ydb/services/auth
     ydb/services/cms
     ydb/services/datastreams

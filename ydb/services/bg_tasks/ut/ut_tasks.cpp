@@ -1,7 +1,7 @@
 #include "task_emulator.h"
 #include <ydb/core/testlib/test_client.h>
 #include <ydb/core/testlib/cs_helper.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_table/table.h>
 #include <ydb/services/bg_tasks/abstract/activity.h>
 #include <ydb/services/bg_tasks/abstract/task.h>
 #include <ydb/services/bg_tasks/service.h>

@@ -17,12 +17,12 @@ PEERDIR(
     ydb/library/yql/udfs/common/string
     ydb/library/yql/utils/backtrace
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/draft
-    ydb/public/sdk/cpp/client/ydb_query
-    ydb/public/sdk/cpp/client/ydb_proto
-    ydb/public/sdk/cpp/client/ydb_scheme
-    ydb/public/sdk/cpp/client/ydb_table
-    ydb/public/sdk/cpp/client/ydb_topic
+    client/draft
+    client/ydb_query
+    client/ydb_proto
+    client/ydb_scheme
+    client/ydb_table
+    client/ydb_topic
 )
 
 YQL_LAST_ABI_VERSION()

@@ -51,19 +51,19 @@ PEERDIR(
     ydb/public/lib/ydb_cli/dump
     ydb/public/lib/ydb_cli/import
     ydb/public/lib/ydb_cli/topic
-    ydb/public/sdk/cpp/client/draft
-    ydb/public/sdk/cpp/client/ydb_coordination
-    ydb/public/sdk/cpp/client/ydb_discovery
-    ydb/public/sdk/cpp/client/ydb_export
-    ydb/public/sdk/cpp/client/ydb_import
-    ydb/public/sdk/cpp/client/ydb_monitoring
-    ydb/public/sdk/cpp/client/ydb_operation
-    ydb/public/sdk/cpp/client/ydb_persqueue_public
-    ydb/public/sdk/cpp/client/ydb_proto
-    ydb/public/sdk/cpp/client/ydb_scheme
-    ydb/public/sdk/cpp/client/ydb_table
-    ydb/public/sdk/cpp/client/ydb_topic
-    ydb/public/sdk/cpp/client/ydb_types/credentials/login
+    client/draft
+    client/ydb_coordination
+    client/ydb_discovery
+    client/ydb_export
+    client/ydb_import
+    client/ydb_monitoring
+    client/ydb_operation
+    client/ydb_persqueue_public
+    client/ydb_proto
+    client/ydb_scheme
+    client/ydb_table
+    client/ydb_topic
+    client/ydb_types/credentials/login
 )
 
 RESOURCE(

@@ -19,10 +19,10 @@
 #include <ydb/library/yql/public/issue/yql_issue_message.h>
 
 // new grpc client
-#include <ydb/public/sdk/cpp/client/ydb_driver/driver.h>
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
-#include <ydb/public/sdk/cpp/client/ydb_result/result.h>
-#include <ydb/public/sdk/cpp/client/resources/ydb_resources.h>
+#include <client/ydb_driver/driver.h>
+#include <client/ydb_params/params.h>
+#include <client/ydb_result/result.h>
+#include <client/resources/ydb_resources.h>
 
 #include <ydb/services/ydb/ydb_common_ut.h>
 

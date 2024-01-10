@@ -3,9 +3,9 @@
 #include "kqp_ut_common.h"
 #include <ydb/library/accessor/accessor.h>
 #include <ydb/public/lib/scheme_types/scheme_type_id.h>
-#include <ydb/public/sdk/cpp/client/draft/ydb_long_tx.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/status_codes.h>
+#include <client/draft/ydb_long_tx.h>
+#include <client/ydb_table/table.h>
+#include <client/ydb_types/status_codes.h>
 #include <ydb/core/tx/columnshard/columnshard_ut_common.h>
 
 #include <ydb/core/formats/arrow/simple_builder/filler.h>

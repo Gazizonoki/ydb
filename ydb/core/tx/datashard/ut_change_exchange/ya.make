@@ -24,10 +24,10 @@ PEERDIR(
     ydb/core/tx
     ydb/library/yql/public/udf/service/exception_policy
     ydb/public/lib/yson_value
-    ydb/public/sdk/cpp/client/ydb_datastreams
-    ydb/public/sdk/cpp/client/ydb_topic
-    ydb/public/sdk/cpp/client/ydb_persqueue_public
-    ydb/public/sdk/cpp/client/ydb_result
+    client/ydb_datastreams
+    client/ydb_topic
+    client/ydb_persqueue_public
+    client/ydb_result
 )
 
 YQL_LAST_ABI_VERSION()

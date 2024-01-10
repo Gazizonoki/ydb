@@ -3,9 +3,9 @@
 #include <ydb/core/fq/libs/control_plane_storage/proto/yq_internal.pb.h>
 #include <ydb/core/fq/libs/events/event_subspace.h>
 #include <ydb/core/fq/libs/protos/fq_private.pb.h>
-#include <ydb/public/sdk/cpp/client/ydb_query/query.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/operation/operation.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/status_codes.h>
+#include <client/ydb_query/query.h>
+#include <client/ydb_types/operation/operation.h>
+#include <client/ydb_types/status_codes.h>
 
 #include <ydb/library/yql/public/issue/yql_issue.h>
 

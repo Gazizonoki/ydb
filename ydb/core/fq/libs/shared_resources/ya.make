@@ -20,9 +20,9 @@ PEERDIR(
     ydb/library/db_pool
     ydb/library/logger
     ydb/library/security
-    ydb/public/sdk/cpp/client/ydb_driver
-    ydb/public/sdk/cpp/client/ydb_extension
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_driver
+    client/ydb_extension
+    client/ydb_table
 )
 
 YQL_LAST_ABI_VERSION()

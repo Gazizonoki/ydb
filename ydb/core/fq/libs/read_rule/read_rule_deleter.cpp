@@ -4,7 +4,7 @@
 #include <ydb/core/fq/libs/events/events.h>
 
 #include <ydb/library/services/services.pb.h>
-#include <ydb/public/sdk/cpp/client/ydb_persqueue_public/persqueue.h>
+#include <client/ydb_persqueue_public/persqueue.h>
 
 #include <ydb/library/actors/core/actor_bootstrapped.h>
 #include <ydb/library/actors/core/hfunc.h>

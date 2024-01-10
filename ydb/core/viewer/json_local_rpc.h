@@ -12,7 +12,7 @@
 #include <ydb/public/api/grpc/ydb_topic_v1.grpc.pb.h>
 #include <ydb/core/grpc_services/rpc_calls.h>
 #include <ydb/core/grpc_services/local_rpc/local_rpc.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/status/status.h>
+#include <client/ydb_types/status/status.h>
 
 namespace NKikimr {
 namespace NViewer {

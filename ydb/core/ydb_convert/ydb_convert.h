@@ -8,7 +8,7 @@
 #include <ydb/public/api/protos/ydb_value.pb.h>
 #include <ydb/public/api/protos/ydb_scheme.pb.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_value/value.h>
+#include <client/ydb_value/value.h>
 
 #include <util/memory/pool.h>
 

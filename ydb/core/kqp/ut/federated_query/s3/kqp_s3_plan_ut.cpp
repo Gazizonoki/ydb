@@ -4,11 +4,11 @@
 #include <ydb/core/kqp/ut/federated_query/common/common.h>
 #include <ydb/core/kqp/federated_query/kqp_federated_query_helpers.h>
 #include <ydb/library/yql/utils/log/log.h>
-#include <ydb/public/sdk/cpp/client/ydb_operation/operation.h>
-#include <ydb/public/sdk/cpp/client/ydb_proto/accessor.h>
-#include <ydb/public/sdk/cpp/client/ydb_types/operation/operation.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
-#include <ydb/public/sdk/cpp/client/ydb_query/client.h>
+#include <client/ydb_operation/operation.h>
+#include <client/ydb_proto/accessor.h>
+#include <client/ydb_types/operation/operation.h>
+#include <client/ydb_table/table.h>
+#include <client/ydb_query/client.h>
 
 #include <library/cpp/json/json_reader.h>
 #include <library/cpp/testing/unittest/registar.h>

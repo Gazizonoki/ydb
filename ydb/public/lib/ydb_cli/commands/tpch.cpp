@@ -10,7 +10,7 @@
 
 #include <library/cpp/json/json_writer.h>
 
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_table/table.h>
 
 #include "benchmark_utils.h"
 

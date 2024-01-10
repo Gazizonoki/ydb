@@ -6,7 +6,7 @@ SRCS(
 
 PEERDIR(
     ydb/public/api/protos
-    ydb/public/sdk/cpp/client/ydb_persqueue_core
+    client/ydb_persqueue_core
 )
 
 END()

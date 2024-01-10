@@ -8,10 +8,10 @@
 #include <util/string/printf.h>
 
 #include <ydb/public/api/protos/draft/fq.pb.h>
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
-#include <ydb/public/sdk/cpp/client/ydb_params/params.h>
-#include <ydb/public/sdk/cpp/client/ydb_result/result.h>
-#include <ydb/public/sdk/cpp/client/ydb_table/table.h>
+#include <client/ydb_params/params.h>
+#include <client/ydb_params/params.h>
+#include <client/ydb_result/result.h>
+#include <client/ydb_table/table.h>
 
 #include <ydb/core/fq/libs/control_plane_storage/events/events.h>
 #include <ydb/core/fq/libs/db_schema/db_schema.h>

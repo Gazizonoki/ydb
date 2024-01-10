@@ -278,7 +278,7 @@ PEERDIR(
     ydb/public/lib/deprecated/kicli
     ydb/public/lib/json_value
     ydb/public/api/grpc
-    ydb/public/sdk/cpp/client/ydb_types
+    client/ydb_types
 )
 
 YQL_LAST_ABI_VERSION()

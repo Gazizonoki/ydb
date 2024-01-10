@@ -7,7 +7,7 @@
 #include <library/cpp/testing/unittest/registar.h>
 
 #include <ydb/core/base/ticket_parser.h>
-#include <ydb/public/sdk/cpp/client/ydb_topic/topic.h>
+#include <client/ydb_topic/topic.h>
 
 namespace NKikimr::NReplication {
 

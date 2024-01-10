@@ -1,8 +1,8 @@
 #pragma once
 
 #include <ydb/core/protos/grpc_pq_old.pb.h>
-#include <ydb/public/sdk/cpp/client/ydb_persqueue_core/persqueue.h>
-#include <ydb/public/sdk/cpp/client/ydb_topic/topic.h>
+#include <client/ydb_persqueue_core/persqueue.h>
+#include <client/ydb_topic/topic.h>
 
 #include <util/string/vector.h>
 

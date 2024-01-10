@@ -1,8 +1,8 @@
 #pragma once
 
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
-#include <ydb/public/sdk/cpp/client/ydb_query/query.h>
-#include <ydb/public/sdk/cpp/client/ydb_operation/operation.h>
+#include <client/ydb_query/query.h>
+#include <client/ydb_operation/operation.h>
 
 namespace NKikimr::NKqp::NFederatedQueryTest {
     using namespace NKikimr::NKqp;

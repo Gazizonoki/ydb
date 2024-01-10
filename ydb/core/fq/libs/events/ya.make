@@ -13,7 +13,7 @@ PEERDIR(
     ydb/library/yql/providers/dq/provider
     ydb/library/yql/public/issue
     ydb/public/api/protos
-    ydb/public/sdk/cpp/client/ydb_table
+    client/ydb_table
 )
 
 YQL_LAST_ABI_VERSION()

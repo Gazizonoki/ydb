@@ -9,7 +9,7 @@ TIMEOUT(600)
 PEERDIR(
     library/cpp/testing/unittest
     ydb/core/testlib/default
-    ydb/public/sdk/cpp/client/ydb_topic
+    client/ydb_topic
 )
 
 SRCS(
