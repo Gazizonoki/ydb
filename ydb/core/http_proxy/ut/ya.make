@@ -18,8 +18,8 @@ PEERDIR(
     ydb/library/persqueue/tests
     ydb/library/testlib/service_mocks
     ydb/library/yql/public/udf/service/exception_policy
-    ydb/public/sdk/cpp/client/ydb_discovery
-    ydb/public/sdk/cpp/client/ydb_types
+    ydb/public/sdk/cpp/src/client/discovery
+    ydb/public/sdk/cpp/src/client/types
     ydb/services/datastreams
     ydb/services/kesus
     ydb/services/persqueue_cluster_discovery

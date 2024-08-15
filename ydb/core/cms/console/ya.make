@@ -96,7 +96,7 @@ PEERDIR(
     ydb/library/aclib
     ydb/library/yaml_config
     ydb/public/api/protos
-    ydb/public/sdk/cpp_v2/src/library/operation_id/
+    ydb/public/sdk/cpp/src/library/operation_id/
 )
 
 YQL_LAST_ABI_VERSION()
