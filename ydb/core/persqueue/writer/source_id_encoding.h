@@ -1,7 +1,7 @@
 #pragma once
 
 #include <ydb/public/lib/deprecated/kicli/kicli.h>
-#include <ydb-cpp-sdk/client/ydb_params/params.h>
+#include <ydb-cpp-sdk/client/params/params.h>
 
 #include <util/generic/fwd.h>
 #include <util/generic/string.h>

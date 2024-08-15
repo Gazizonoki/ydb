@@ -4,7 +4,7 @@
 #include <ydb/core/base/tablet_pipecache.h>
 #include <ydb/core/kqp/ut/common/kqp_ut_common.h>
 #include <ydb/core/tx/columnshard/hooks/testing/controller.h>
-#include <ydb-cpp-sdk/client/ydb_types/status_codes.h>
+#include <ydb-cpp-sdk/client/types/status_codes.h>
 
 #include <ydb/core/statistics/events.h>
 
