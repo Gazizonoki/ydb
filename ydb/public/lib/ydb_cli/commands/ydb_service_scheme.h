@@ -152,8 +152,8 @@ public:
     virtual int Run(TConfig& config) override;
 
 private:
-    TString Subject;
-    TVector<TString> PermissionsToGrant;
+    std::string Subject;
+    std::vector<std::string> PermissionsToGrant;
 };
 
 class TCommandPermissionRevoke : public TYdbOperationCommand, public TCommandWithPath {
@@ -164,8 +164,8 @@ public:
     virtual int Run(TConfig& config) override;
 
 private:
-    TString Subject;
-    TVector<TString> PermissionsToRevoke;
+    std::string Subject;
+    std::vector<std::string> PermissionsToRevoke;
 };
 
 class TCommandPermissionSet : public TYdbOperationCommand, public TCommandWithPath {
@@ -176,8 +176,8 @@ public:
     virtual int Run(TConfig& config) override;
 
 private:
-    TString Subject;
-    TVector<TString> PermissionsToSet;
+    std::string Subject;
+    std::vector<std::string> PermissionsToSet;
 };
 
 class TCommandChangeOwner : public TYdbOperationCommand, public TCommandWithPath {
