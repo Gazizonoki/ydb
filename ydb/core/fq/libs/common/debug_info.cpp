@@ -19,7 +19,7 @@ TString TDebugItem::ToString() const {
 size_t TDebugItem::GetByteSize() const {
     size_t paramsSize = 0;
     for (const auto& [key, value]: Params.GetValues()) {
-        paramsSize += key.Size() + NYdb::TProtoAccessor::GetProto(value).ByteSizeLong();
+        paramsSize += key.size() + NYdb::TProtoAccessor::GetProto(value).ByteSizeLong();
     }
     return sizeof(*this)
             + Query.Size()
