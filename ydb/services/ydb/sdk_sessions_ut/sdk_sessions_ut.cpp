@@ -21,7 +21,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
         NYdb::NTable::TTableClient client(driver);
         int count = 10;
 
-        THashSet<TString> sids;
+        THashSet<std::string> sids;
         while (count--) {
             auto sessionResponse = client.GetSession().ExtractValueSync();
             UNIT_ASSERT_EQUAL(sessionResponse.IsTransportError(), false);
@@ -500,7 +500,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
 
         TKikimrWithGrpcAndRootSchema server(appConfig);
 
-        TVector<TString> sessionIds;
+        std::vector<std::string> sessionIds;
         int iterations = 50;
 
         while (iterations--) {
@@ -519,7 +519,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
         for (const auto& sessionId : sessionIds) {
             grpc::ClientContext context;
             Ydb::Table::KeepAliveRequest request;
-            request.set_session_id(sessionId);
+            request.set_session_id(TStringType{sessionId});
             Ydb::Table::KeepAliveResponse response;
             auto status = stub->KeepAlive(&context, request, &response);
             UNIT_ASSERT(status.ok());
@@ -534,7 +534,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
 
         TKikimrWithGrpcAndRootSchema server(appConfig);
 
-        TVector<TString> sessionIds;
+        std::vector<std::string> sessionIds;
         int iterations = 100;
 
         while (iterations--) {
@@ -577,7 +577,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
         for (const auto& sessionId : sessionIds) {
             grpc::ClientContext context;
             Ydb::Table::KeepAliveRequest request;
-            request.set_session_id(sessionId);
+            request.set_session_id(TStringType{sessionId});
             Ydb::Table::KeepAliveResponse response;
             auto status = stub->KeepAlive(&context, request, &response);
             UNIT_ASSERT(status.ok());
@@ -592,7 +592,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
 
         TKikimrWithGrpcAndRootSchema server(appConfig);
 
-        TVector<TString> sessionIds;
+        std::vector<std::string> sessionIds;
         int iterations = 100;
 
         while (iterations--) {
@@ -623,7 +623,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
         for (const auto& sessionId : sessionIds) {
             grpc::ClientContext context;
             Ydb::Table::KeepAliveRequest request;
-            request.set_session_id(sessionId);
+            request.set_session_id(TStringType{sessionId});
             Ydb::Table::KeepAliveResponse response;
             auto status = stub->KeepAlive(&context, request, &response);
             UNIT_ASSERT(status.ok());
@@ -638,7 +638,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
 
         TKikimrWithGrpcAndRootSchema server(appConfig);
 
-        TVector<TString> sessionIds;
+        std::vector<std::string> sessionIds;
         int iterations = 100;
 
         while (iterations--) {
@@ -669,7 +669,7 @@ Y_UNIT_TEST_SUITE(YdbSdkSessions) {
         for (const auto& sessionId : sessionIds) {
             grpc::ClientContext context;
             Ydb::Table::KeepAliveRequest request;
-            request.set_session_id(sessionId);
+            request.set_session_id(TStringType{sessionId});
             Ydb::Table::KeepAliveResponse response;
             auto status = stub->KeepAlive(&context, request, &response);
             UNIT_ASSERT(status.ok());
