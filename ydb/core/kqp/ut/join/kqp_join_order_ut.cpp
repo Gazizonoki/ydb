@@ -548,7 +548,7 @@ Y_UNIT_TEST_SUITE(KqpJoinOrder) {
                 correctJoinOrderPath = correctJoinOrderPath.substr(0, correctJoinOrderPath.find(".json")) + "_column_store.json";      
             }
 
-            auto currentJoinOrder = GetDetailedJoinOrder(result.GetPlan());
+            auto currentJoinOrder = GetDetailedJoinOrder(TString{result.GetPlan()});
             Cerr << currentJoinOrder << Endl;
             /* to canonize the tests use --test-param CANONIZE_JOIN_ORDER_TESTS=TRUE */
             TString canonize = GetTestParam("CANONIZE_JOIN_ORDER_TESTS"); canonize.to_lower();
@@ -563,7 +563,7 @@ Y_UNIT_TEST_SUITE(KqpJoinOrder) {
             }
 
             TString ref = GetStatic(correctJoinOrderPath);
-            UNIT_ASSERT(JoinOrderAndAlgosMatch(result.GetPlan(), ref));
+            UNIT_ASSERT(JoinOrderAndAlgosMatch(TString{result.GetPlan()}, ref));
         }
     }
 
