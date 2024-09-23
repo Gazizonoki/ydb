@@ -9,7 +9,7 @@
 #include <ydb/library/yql/minikql/mkql_string_util.h>
 #include <ydb/library/yql/minikql/computation/mkql_computation_node_holders.h>
 #include <ydb/library/yql/dq/runtime/dq_async_stats.h>
-#include <ydb/public/sdk/cpp/client/ydb_topic/topic.h>
+#include <ydb-cpp-sdk/client/topic/client.h>
 #include <util/generic/queue.h>
 
 #include <ydb/core/fq/libs/row_dispatcher/json_parser.h>
@@ -118,7 +118,7 @@ private:
         TQueue<std::pair<ui64, TString>> Buffer;
         ui64 UsedSize = 0;
         bool DataArrivedSent = false;
-        TMaybe<ui64> NextMessageOffset;
+        std::optional<ui64> NextMessageOffset;
         ui64 LastSendedNextMessageOffset = 0;
     };
 
@@ -452,7 +452,7 @@ void TTopicSession::HandleNewEvents() {
             LOG_ROW_DISPATCHER_TRACE("Too much used memory (" << UsedSize << " bytes), stop reading from yds");
             break;
         }
-        TMaybe<NYdb::NTopic::TReadSessionEvent::TEvent> event = ReadSession->GetEvent(false);
+        std::optional<NYdb::NTopic::TReadSessionEvent::TEvent> event = ReadSession->GetEvent(false);
         if (!event) {
             break;
         }
@@ -472,7 +472,7 @@ void TTopicSession::CloseTopicSession() {
 void TTopicSession::TTopicEventProcessor::operator()(NYdb::NTopic::TReadSessionEvent::TDataReceivedEvent& event) {
     Self.Metrics.RowsRead->Add(event.GetMessages().size());
     for (const auto& message : event.GetMessages()) {
-        const TString& data = message.GetData();
+        const std::string& data = message.GetData();
         Self.IngressStats.Bytes += data.size();
         LOG_ROW_DISPATCHER_TRACE("Data received: " << message.DebugString(true));
 
@@ -493,7 +493,7 @@ void TTopicSession::TTopicEventProcessor::operator()(NYdb::NTopic::TSessionClose
 void TTopicSession::TTopicEventProcessor::operator()(NYdb::NTopic::TReadSessionEvent::TStartPartitionSessionEvent& event) {
     LOG_ROW_DISPATCHER_DEBUG("StartPartitionSessionEvent received");
 
-    TMaybe<ui64> minOffset;
+    std::optional<ui64> minOffset;
     for (const auto& [actorId, info] : Self.Clients) {
          if (!minOffset
             || (info.NextMessageOffset && (info.NextMessageOffset < *minOffset))) {
@@ -518,14 +518,14 @@ void TTopicSession::TTopicEventProcessor::operator()(NYdb::NTopic::TReadSessionE
 }
 
 std::pair<NYql::NUdf::TUnboxedValuePod, i64> TTopicSession::CreateItem(const NYdb::NTopic::TReadSessionEvent::TDataReceivedEvent::TMessage& message) {
-    const TString& data = message.GetData();
-    i64 usedSpace = data.Size();
-    NYql::NUdf::TUnboxedValuePod item = NKikimr::NMiniKQL::MakeString(NYql::NUdf::TStringRef(data.Data(), data.Size()));
+    const std::string& data = message.GetData();
+    i64 usedSpace = data.size();
+    NYql::NUdf::TUnboxedValuePod item = NKikimr::NMiniKQL::MakeString(NYql::NUdf::TStringRef(data.data(), data.size()));
     return std::make_pair(item, usedSpace);
 }
 
 TString TTopicSession::GetSessionId() const {
-    return ReadSession ? ReadSession->GetSessionId() : TString{"empty"};
+    return ReadSession ? TString{ReadSession->GetSessionId()} : TString{"empty"};
 }
 
 void TTopicSession::SendToParsing(ui64 offset, const TString& message) {
