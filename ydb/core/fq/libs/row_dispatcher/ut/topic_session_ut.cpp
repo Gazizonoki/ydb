@@ -137,7 +137,8 @@ public:
     NActors::TTestActorRuntime Runtime;
     NActors::TActorId TopicSession;
     NActors::TActorId RowDispatcherActorId;
-    NYdb::TDriver Driver = NYdb::TDriver(NYdb::TDriverConfig().SetLog(CreateLogBackend("cerr")));
+    NYdb::TDriver Driver = NYdb::TDriver(NYdb::TDriverConfig()
+        .SetLog(std::unique_ptr<TLogBackend>(CreateLogBackend("cerr").Release())));
     std::shared_ptr<NYdb::ICredentialsProviderFactory> CredentialsProviderFactory;
     NActors::TActorId ReadActorId1;
     NActors::TActorId ReadActorId2;
