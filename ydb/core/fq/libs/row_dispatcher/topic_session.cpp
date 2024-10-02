@@ -476,7 +476,7 @@ void TTopicSession::TTopicEventProcessor::operator()(NYdb::NTopic::TReadSessionE
         Self.IngressStats.Bytes += data.size();
         LOG_ROW_DISPATCHER_TRACE("Data received: " << message.DebugString(true));
 
-        TString item = message.GetData();
+        auto item = TString{message.GetData()};
         Self.SendToParsing(message.GetOffset(), item);
         Self.LastMessageOffset = message.GetOffset();
     }
